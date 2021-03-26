@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -20,6 +21,8 @@ namespace Bookle_2._0.Controllers
 
         public IActionResult Index()
         {
+            string hey = Directory.GetCurrentDirectory();
+
             return View();
         }
 
